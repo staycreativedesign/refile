@@ -35,7 +35,6 @@ set :passenger_restart_with_touch, true
 
 # Default value for keep_releases is 5
 set :keep_releases, 2
-before 'deploy', 'rvm1:install:gems'
 
 namespace :deploy do
 
