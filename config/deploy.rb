@@ -9,6 +9,8 @@ set :repo_url, 'git@github.com:staycreativedesign/refile.git'
 
 # Default deploy_to directory is /var/www/my_app_name
 set :deploy_to, '/var/www/refile'
+set :passenger_restart_with_touch, true
+
 
 # Default value for :scm is :git
 # set :scm, :git
@@ -30,9 +32,10 @@ set :deploy_to, '/var/www/refile'
 
 # Default value for default_env is {}
 # set :default_env, { path: "/opt/ruby/bin:$PATH" }
-before 'deploy', 'rvm1:install:gems'
+
 # Default value for keep_releases is 5
 set :keep_releases, 2
+before 'deploy', 'rvm1:install:gems'
 
 namespace :deploy do
 
