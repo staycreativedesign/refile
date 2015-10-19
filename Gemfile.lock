@@ -202,6 +202,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  capistrano-bundler (~> 1.1.2)
   capistrano-passenger
   capistrano-rails
   coffee-rails (~> 4.1.0)

@@ -12,7 +12,7 @@ gem "twitter-bootstrap-rails"
 gem 'rvm1-capistrano3', require: false
 gem 'capistrano-rails', group: :development
 gem 'capistrano-passenger'
-
+gem 'capistrano-bundler', '~> 1.1.2'
 
 gem "jquery-rails"
 
